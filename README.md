@@ -26,7 +26,7 @@ git clone https://github.com/mk-fryer/HatefulMemes
 
 Please follow prerequisites for the Hateful Memes dataset at [this link](https://fb.me/hm_prerequisites).
 
-## Running
+## Running (working on getting this to function properly...)
 
 Run training with the following command on the Hateful Memes dataset:
 
