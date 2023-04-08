@@ -28,6 +28,8 @@ Please follow prerequisites for the Hateful Memes dataset at [this link](https:/
 Run training with the following command on the Hateful Memes dataset:
 
 ```
+!mmf_convert_hm --zip_file=../data.zip --bypass_checksum=1 --password={put_password_here}
+
 MMF_USER_DIR="." mmf_run config="configs/experiments/defaults.yaml"  model=concat_vl dataset=hateful_memes training.num_workers=0
 ```
 
