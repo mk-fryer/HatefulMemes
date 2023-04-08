@@ -1,6 +1,4 @@
-# Hateful Memes Example using MMF
-
-This repository serves as an example of how to use MMF as a library in your projects and build on top of it.
+# Hateful Memes using MMF
 
 The example tries to replicate the model developed in DrivenData's [blog post](https://www.drivendata.co/blog/hateful-memes-benchmark/) on the Hateful Memes.
 
@@ -17,7 +15,6 @@ git clone https://github.com/mk-fryer/HatefulMemes
 ```
 
 ```
-
 %cd /content/gdrive/MyDrive/hm_project/HatefulMemes
 !pip install -r requirements.txt
 ```
