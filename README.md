@@ -10,7 +10,7 @@ Preferably, create your own conda environment before following the steps below:
 
 ```
 git clone https://github.com/mk-fryer/HatefulMemes
-cd hm_example_mmf
+cd HatefulMemes
 pip install -r requirements.txt
 ```
 
