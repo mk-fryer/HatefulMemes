@@ -9,7 +9,7 @@ The example tries to replicate the model developed in DrivenData's [blog post](h
 Preferably, create your own conda environment before following the steps below:
 
 ```
-git clone https://github.com/apsdehal/hm_example_mmf
+git clone https://github.com/mk-fryer/HatefulMemes
 cd hm_example_mmf
 pip install -r requirements.txt
 ```
