@@ -6,12 +6,20 @@ The example tries to replicate the model developed in DrivenData's [blog post](h
 
 ## Installation
 
-Preferably, create your own conda environment before following the steps below:
+```
+from google.colab import drive
+drive.mount('/content/gdrive/')
+```
 
 ```
+%cd /content/gdrive/MyDrive/hm_project
 git clone https://github.com/mk-fryer/HatefulMemes
-cd HatefulMemes
-pip install -r requirements.txt
+```
+
+```
+
+%cd /content/gdrive/MyDrive/hm_project/HatefulMemes
+!pip install -r requirements.txt
 ```
 
 ## Prerequisites
