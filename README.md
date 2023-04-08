@@ -4,7 +4,7 @@ This repository serves as an example of how to use MMF as a library in your proj
 
 The example tries to replicate the model developed in DrivenData's [blog post](https://www.drivendata.co/blog/hateful-memes-benchmark/) on the Hateful Memes.
 
-## Installation
+## Colab Installation
 
 ```
 from google.colab import drive
