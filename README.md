@@ -14,7 +14,7 @@ drive.mount('/content/gdrive/')
 
 
 ```
-!git clone https://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@github.com/mk-fryer/HatefulMemes.git HatefulMemes
+!git clone https://{generated_github_token_from_dev_settings_menu}@github.com/mk-fryer/HatefulMemes.git HatefulMemes
 ```
 
 
