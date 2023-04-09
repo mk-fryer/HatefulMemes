@@ -8,29 +8,49 @@ The example tries to replicate the model developed in DrivenData's [blog post](h
 from google.colab import drive
 drive.mount('/content/gdrive/')
 ```
-
 ```
 %cd /content/gdrive/MyDrive/hm_project
-git clone https://github.com/mk-fryer/HatefulMemes
 ```
+
+
+```
+!git clone https://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@github.com/mk-fryer/HatefulMemes.git HatefulMemes
+```
+
 
 ```
 %cd /content/gdrive/MyDrive/hm_project/HatefulMemes
+```
+
+```
 !pip install -r requirements.txt
 ```
 
+
+
+
 ## Prerequisites
 
-Please follow prerequisites for the Hateful Memes dataset at [this link](https://fb.me/hm_prerequisites).
+Make sure the kaggle dataset, data.zip, is found in the hm_project directory
 
-## Running (working on getting this to function properly...)
+## Running
 
 Run training with the following command on the Hateful Memes dataset:
 
 ```
-!mmf_convert_hm --zip_file=../data.zip --bypass_checksum=1 --password={put_password_here}
+!mmf_convert_hm --zip_file=../data.zip --bypass_checksum=1 --password=KexZs4tn8hujn1nK
+```
 
-!MMF_USER_DIR="/content/gdrive/MyDrive/hm_project/hm_example_mmf" mmf_run config="configs/experiments/defaults.yaml"  model=concat_vl dataset=hateful_memes training.num_workers=0
+```
+!MMF_USER_DIR="/content/gdrive/MyDrive/hm_project/HatefulMemes" mmf_run \
+   config="configs/experiments/defaults.yaml" \
+   model=concat_vl \
+   run_type=train_val \
+   dataset=hateful_memes \
+   training.num_workers=0 \
+   dataset_config.hateful_memes.annotations.train[0]="hateful_memes/defaults/annotations/train.jsonl" \
+   dataset_config.hateful_memes.annotations.val[0]="hateful_memes/defaults/annotations/dev.jsonl" \
+   dataset_config.hateful_memes.annotations.test[0]="hateful_memes/defaults/annotations/test.jsonl"
 ```
 
 We set `training.num_workers=0` here to avoid memory leaks with fasttext.
