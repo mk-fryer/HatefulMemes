@@ -30,7 +30,7 @@ Run training with the following command on the Hateful Memes dataset:
 ```
 !mmf_convert_hm --zip_file=../data.zip --bypass_checksum=1 --password={put_password_here}
 
-%env MMF_USER_DIR="/content/gdrive/MyDrive/hm_project/hm_example_mmf"
+%env MMF_USER_DIR="."
 
 mmf_run config="configs/experiments/defaults.yaml"  model=concat_vl dataset=hateful_memes training.num_workers=0
 ```
