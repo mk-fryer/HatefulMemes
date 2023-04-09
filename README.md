@@ -1,6 +1,4 @@
-# Hateful Memes using MMF
-
-The example tries to replicate the model developed in DrivenData's [blog post](https://www.drivendata.co/blog/hateful-memes-benchmark/) on the Hateful Memes.
+# Hateful Memes 
 
 ## Colab Installation
 
