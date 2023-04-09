@@ -79,9 +79,3 @@ Some notes:
 2. `__init__.py` imports all of the relevant files so that MMF can find them. This is what `env.user_dir` actually looks for.
 3. `models` directory contains our model implementation, in this case specifically `concat_vl`.
 4. `processors` contains our project specific processors implementation, in this case, we implemented FastText processor for Sentence Vectors.
-
-## Issues/Feedback/Questions
-
-Please open up issues related to this repository directly on [MMF](https://github.com/facebookresearch/mmf/issues/new/choose).
-
-
